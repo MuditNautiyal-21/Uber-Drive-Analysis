@@ -28,11 +28,11 @@ This project analyzes an Uber drive dataset to extract insights about ride patte
    git clone https://github.com/MuditNautiyal-21/Uber-Drive-Analysis.git
 
 2. Install required Python libraries:
-```
+```bash
 pip install pandas numpy matplotlib seaborn
 ```
-Open and run the Jupyter Notebook:
-```
+3. Open and run the Jupyter Notebook:
+```bash
 jupyter notebook uber_drive_analysis.ipynb
 ```
 
