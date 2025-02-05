@@ -35,4 +35,4 @@ jupyter notebook uber_drive_analysis.ipynb
 
 '''
 
-Author: Mudit Nautiyal
+## Author: Mudit Nautiyal
