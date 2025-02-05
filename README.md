@@ -25,7 +25,7 @@ This project analyzes an Uber drive dataset to extract insights about ride patte
 ## How to Run the Notebook
 1. Clone the repository:
    ```bash
-   git clone <repository-link>
+   git clone https://github.com/MuditNautiyal-21/Uber-Drive-Analysis.git
 
 Install required Python libraries:
 pip install pandas numpy matplotlib seaborn
