@@ -1,39 +1,71 @@
-# Uber Drive Data Analysis
+# 🚗 Uber Drive Analysis – Exploratory Data Insights & Visual Storytelling
 
-## Project Overview
-This project analyzes an Uber drive dataset to extract insights about ride patterns, trip purposes, and distance distributions.
+## 📌 Project Overview
+This project explores patterns in Uber driving behavior using a real-world dataset containing trip records, locations, categories, and timestamps. It aims to uncover driver habits, peak demand periods, and inefficiencies using **data cleaning, EDA, and visualization**.
 
-## Dataset Description
-- **Source:** Uber drive logs
-- **Features:**
-  - `START_DATE*`, `END_DATE*`: Ride timestamps
-  - `CATEGORY*`: Business or personal trips
-  - `START*`, `STOP*`: Locations
-  - `MILES*`: Distance covered
-  - `PURPOSE*`: Purpose of the trip (e.g., Meeting, Errand, Customer Visit)
+---
 
-## Key Insights
-- Most trips cover short distances.
-- Business trips dominate the dataset, with meetings and customer visits being the most frequent purposes.
-- Some missing values exist in the `PURPOSE*` column.
+## 📦 Dataset Summary
+- Total Records: ~1,150+ Uber trips  
+- Columns: `START_DATE`, `END_DATE`, `CATEGORY`, `START`, `STOP`, `MILES`, `PURPOSE`  
+- Source: Personal ride log dataset (publicly available via Kaggle)
 
-## Visualizations Included
-- **Mileage Distribution:** Histogram of distances traveled per trip.
-- **Trip Purpose Count:** Bar chart of the most common trip purposes.
-- **Correlation Heatmap:** Relationship between numerical features.
+---
 
-## How to Run the Notebook
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MuditNautiyal-21/Uber-Drive-Analysis.git
+## 🎯 Objectives
+- Understand **trip behavior** by location, time, and purpose  
+- Identify **patterns of usage** — working hours vs personal trips  
+- Reveal **peak zones** and **frequent routes**  
+- Use visualizations to derive **business-relevant insights**
 
-2. Install required Python libraries:
-   ```bash
-   pip install pandas numpy matplotlib seaborn
-   ```
-3. Open and run the Jupyter Notebook:
-   ```bash
-   jupyter notebook uber_drive_analysis.ipynb
-   ```
+---
 
-## Author: Mudit Nautiyal
+## 🛠️ Techniques Used
+- **Data Cleaning**:
+  - Handled null `PURPOSE` values
+  - Removed rows with missing timestamps
+- **Feature Engineering**:
+  - Extracted `day`, `month`, `hour`, and `weekday` from timestamps
+- **EDA**:
+  - Trip distribution by category (Business vs Personal)
+  - Purpose-based trip frequency
+  - Most visited start/stop locations
+  - Time-based ride patterns
+
+---
+
+## 📊 Visual Insights
+
+| Insight | Visualization |
+|--------|---------------|
+| 🔹 Most Frequent Trip Purpose | Bar chart of `PURPOSE` count |
+| 📍 Top Start & Stop Locations | Count plots & maps |
+| 🕒 Trips by Hour & Weekday | Heatmaps and line charts |
+| 📅 Monthly Ride Trends | Calendar heatmap / Time series |
+| 🚦 Work vs Personal Balance | Category pie chart |
+
+> Used `Matplotlib`, `Seaborn`, and `Plotly` for rich interactive and static visuals.
+
+---
+
+## 💡 Key Findings
+
+- 🚕 Majority of rides are **Business** related (~70%)
+- 🏢 Most frequent **start and stop locations** are Office/Consulting locations
+- 🕒 Peak ride hours are **early morning and early evening**
+- 📆 Weekdays (esp. Wednesday & Thursday) show the highest ride density
+- 📍 Repeated trip patterns indicate potential for **route optimization**
+
+---
+
+## 📂 Folder Structure
+
+📦 Uber-Drive-Analysis
+├── Uber_Drive_Analysis.ipynb
+├── Uber_Drive.csv
+├── images/
+│ ├── top_purposes.png
+│ ├── trip_times.png
+│ └── location_counts.png
+├── README.md
+└── requirements.txt
