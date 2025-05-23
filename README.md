@@ -63,9 +63,4 @@ This project explores patterns in Uber driving behavior using a real-world datas
 📦 Uber-Drive-Analysis
 ├── Uber_Drive_Analysis.ipynb
 ├── Uber_Drive.csv
-├── images/
-│ ├── top_purposes.png
-│ ├── trip_times.png
-│ └── location_counts.png
-├── README.md
-└── requirements.txt
+└── README.md
