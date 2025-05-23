@@ -59,8 +59,9 @@ This project explores patterns in Uber driving behavior using a real-world datas
 ---
 
 ## 📂 Folder Structure
-
+```
 📦 Uber-Drive-Analysis
 ├── Uber_Drive_Analysis.ipynb
 ├── Uber_Drive.csv
 └── README.md
+```
